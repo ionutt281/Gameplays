@@ -4,11 +4,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'media.html'));
+  res.sendFile(path.join(__dirname, '', 'media.html'));
 });
 
 // Start server
